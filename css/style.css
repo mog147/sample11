@@ -1,0 +1,612 @@
+/* --------------------------------- */
+/* 共通 */
+
+:root {
+    --main-color: #ffe400;
+    --accent-color: #001f3f;
+    --dark-main-color: #333;
+    --text-bright-color: #ececec;
+    --icon-color: #fff;
+    --icon-bk-color: #ddd;
+    --large-width: 1000px;
+    --middle-width: 800px;
+    --small-width:600px;
+}
+
+body {
+    margin: 0;
+    font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, ".SFNSDisplay-Regular", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Helvetica, "游ゴシック Medium", meiryo, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    background-color: var(--main-color);
+    color: var(--accent-color);
+}
+
+.container {
+    padding: 5rem 10rem; 
+}
+
+li {
+    list-style: none;
+    margin-right: 1rem;
+    margin: 1rem;
+
+}
+
+a {
+    color: var(--text-bright-color);
+    text-decoration: none;
+}
+
+h2{
+  font-weight:normal;
+}
+
+.wrapper{
+  overflow:hidden;
+}
+
+
+.title{
+  text-align: center;
+  font-size: 2rem;
+  font-family: "minion-pro", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/** クラス指定の末尾の文字列が[__text]だったら*/
+div[class$="__text"],
+[class*="__text "]{
+
+  line-height: 3rem;
+  text-align: center;
+}
+
+/* 共通 */
+/* --------------------------------- */
+
+/* --------------------------------- */
+/* header */
+
+/* スクロールしたらヘッダーメニューのフォントカラー変更 */
+.headerColorScroll {
+  background:var(--accent-color)!important;
+  transition: color 0.4s ease-out;
+}
+
+
+.header {
+    position: absolute;
+    width: 100%;
+    margin-bottom: 0;
+    background: transparent;
+}
+
+.gnav__list{
+  display: flex;
+	justify-content: flex-end;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.gnav__list li+ li {
+  border-left: 1px solid var(--dark-main-color);
+  padding: 0rem 2rem;
+  margin: auto 0;
+}
+
+.gnav__list li:first-child{
+  padding: 1rem 2rem;
+  margin: auto 0;
+}
+
+.gnav__link{
+  color: var(--dark-main-color);
+}
+
+.gnav__item {
+   z-index: 999;
+   font-size: 1.5rem;
+   text-align: center;
+   
+}
+
+.gnav__link{
+  display: block;
+}
+
+/* header */
+/* --------------------------------- */
+
+/* --------------------------------- */
+/* conA */
+
+
+.conA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image:url(../img/top__pc.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    padding-bottom: 10%;
+}
+
+/* conA */
+/* --------------------------------- */
+
+/* --------------------------------- */
+/* conB */
+
+
+
+.conB__box{
+  display: block;
+}
+
+.conB__image{
+  width: 100%;
+  margin: 3rem 0 ;
+}
+
+/* conB */
+/* --------------------------------- */
+/* conC */
+
+.conC {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  min-height: 100vh;
+  position: relative;
+  /* 横幅をフィットさせる */
+  min-width:fit-content; 
+  text-align: center;
+  background-image:url(../img/value.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+  margin-top: 10rem;
+  padding-bottom: 45%;
+}
+
+/* conC */
+/* --------------------------------- */
+/* conD */
+
+/* conD */
+/* --------------------------------- */
+/* conE */
+
+
+.conE__image{
+  min-height: 100vh;
+  background-image:url(../img/history.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+  object-fit: cover;
+  padding-bottom: 120%;
+}
+
+
+
+/* conE */
+/* --------------------------------- */
+/* conF */
+
+.conF__image{
+  min-height: 40vh;
+  background-image: url(../img/pro.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+  object-fit: cover;
+  margin-bottom: 3rem;
+}
+
+.conF__box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pro{
+  width: 30%;
+  margin-right: 3rem;
+}
+
+.pro:last-child{
+  margin-right: 0;
+}
+
+
+
+/* conF */
+/* --------------------------------- */
+/* conG */
+
+  .conG{
+    min-height: 100vh;
+    background-image: url(../img/fun.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    object-fit: cover;
+    padding-bottom: 50%;
+}
+
+/* conG */
+/* --------------------------------- */
+/* conH */
+
+.conH__image {
+  min-height: 100vhpx;
+  background-image:url(../img/eat.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  object-fit: cover;
+  padding-bottom: 200%;
+}
+
+
+/* conH */
+/* --------------------------------- */
+/* conI */
+
+.conI{
+  min-height: 100vh;
+  background-image: url(../img/event.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+  object-fit: cover;
+  padding-bottom: 100%;
+}
+
+/* conI */
+/* --------------------------------- */
+
+
+/* hamburger */
+
+
+
+.hamburger .btn-gNav {
+  position: fixed;
+  top: 20px;
+  left: 30px;
+  width: 30px;
+  height: 24px;
+  z-index: 12;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.hamburger .btn-gNav span {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background:var(--main-color);
+  border-radius: 10px;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.hamburger .btn-gNav span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger .btn-gNav span:nth-child(2) {
+  top: 10px;
+}
+
+.hamburger .btn-gNav span:nth-child(3) {
+  top: 20px;
+}
+
+.hamburger .btn-gNav.open span:nth-child(1) {
+  background: #ffffff;
+  top: 6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.hamburger .btn-gNav.open span:nth-child(2),
+.hamburger .btn-gNav.open span:nth-child(3) {
+  top: 6px;
+  background: #ffffff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.gnav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  box-sizing: border-box;
+  z-index: 1;
+  padding-top: 50px;
+  transition: .3s;
+}
+
+.btn-gNav {
+  display: block;
+}
+
+
+
+.gnav.open {
+    right: 0;
+}
+
+.gnav__list {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    /*justify-content: center;*/
+}
+
+.gnav__item {
+    width: 86%;
+    padding: 15px;
+    border-bottom: var(--text-bright-color) 1px solid;
+}
+
+.gnav__link {
+  color:var(--text-bright-color);
+}
+
+.gnav__list li + li{
+  padding: 1rem 2rem;
+}
+
+.gnav__list li:first-child{
+  padding: 1rem 2rem;
+}
+
+
+/* hamburger */
+/* --------------------------------- */
+
+/* --------------------------------- */
+/*----- footer -----*/
+
+
+
+.footer{
+
+  min-height: 100vh;
+  background-image: url(../img/foot.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: auto;
+  bottom: 0; /*下に固定*/
+  margin-top: 0%;
+}
+
+
+
+.foot__image{
+  position: absolute;
+  top:77%;
+  left:62%
+}
+
+
+
+
+/*-----footer-----*/
+/* --------------------------------- */
+  
+ /* ------------------------ */
+/* phoneのときの制御 */
+@media (max-width:599px) {
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 3rem!important;
+}
+
+section{
+  margin: 0;
+}
+
+div[class$="__text"], 
+[class*="__text "] {
+ line-height: 2rem;
+}
+
+
+.conC{
+  min-height: 200px;
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+.conE{
+  min-height: 100vh;
+  background-image: url(../img/history__phone.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 40%;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  padding-bottom: 220%;
+}
+
+.conE__image{
+  display: none;
+}
+
+.conF__box{
+  display: block;
+  
+}
+
+.pro{
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.conG{
+  padding: 0;
+  margin-bottom: -15rem;
+}
+
+.conH {
+  min-height: 100vh;
+  background-image:url(../img/eat.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  object-fit: cover;
+}
+
+.conH__image {
+  display: none;
+}
+
+.conI{
+  padding-bottom: 0;
+}
+
+
+
+  
+
+/* --------------------------------- */
+/* header */
+  
+.conA{
+  background-image: url(../img/top.png);
+  width: 100%;
+  height: auto;
+  min-height: 700px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+}
+
+.conA::before{
+  background:none;
+}
+
+.conA__image{
+  width: 100%;
+}
+
+.hamburger .btn-gNav span {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background:var(--accent-color);
+  border-radius: 10px;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+
+/* header */
+ /* --------------------------------- */
+  /* footer */
+
+.footer{
+  min-height: 13vh;
+} 
+
+.foot__image{
+  width: 30%;
+  top:47%;
+}
+
+
+/* footer */
+/* --------------------------------- */
+}
+
+
+/* ------------------------ */
+/* タブレットのときの制御 */
+@media (min-width:600px) and (max-width:799px) {
+
+  h1 {
+    font-size: 46px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+}
+/* タブレットのときの制御 */
+/* ------------------------ */
+
+/* ------------------------ */
+/* PCのときの制御 */
+@media (min-width:800px)  {
+
+  h1 {
+    font-size: 46px;
+  }
+
+  h2 {
+      font-size: 24px;
+  }
+
+  p {
+      font-size: 18px;
+  }
+
+
+}
+
+
+/* PCのときの制御 */
+/* ------------------------ */
+
+/* ------------------------ */
+/* ダークモードの対応 */
+.div {
+  color: light-dark(#333, #fff);
+  background-color: light-dark(#fff, #333);
+}
+/* ダークモードの対応 */
+/* ------------------------ */
