@@ -28,6 +28,14 @@ body {
   font-style: normal;
 }
 
+.main__color{
+  color: var(--main-color);
+}
+
+.sub__color{
+  color: var(--sub-color);
+}
+
 .container {
     padding: 5rem 10rem; 
 }
@@ -101,7 +109,7 @@ div[class$="__text"],
 
 
 .gnav__list li+ li {
-  border-left: 1px solid var(--dark-main-color);
+  border-left: 1px solid var(--main-color);
   
 }
 
@@ -235,7 +243,7 @@ a {
 
 .conB__box{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   margin: 3rem;
 }
@@ -306,6 +314,16 @@ a {
 /* --------------------------------- */
 /* conD */
 
+.conD__text{
+  margin-top: 10rem;
+}
+
+.conD__box{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10rem 0;
+}
 
 /* conD */
 /* --------------------------------- */
@@ -516,9 +534,32 @@ div[class$="__text"],
   margin-bottom: 10rem;
 }
 
+.conC__image__phone:last-child{
+  margin: 0;
+}
+
 .loop__wrap{
   display: none;
 }
+
+.conD__box{
+  display: block;
+  margin: 0;
+}
+
+.conD__image{
+  display: none;
+}
+
+.conD__image__phone{
+  width: 100%;
+}
+
+.conD__text{
+  margin: 3rem 0;
+}
+
+
 
 .conE{
   min-height: 100vh;
@@ -776,7 +817,7 @@ div[class$="__text"],
   }
 
   h2 {
-      font-size: 24px;
+      font-size: 55px;
   }
 
   p {
@@ -786,6 +827,15 @@ div[class$="__text"],
   .conC__image__phone{
     display: none;
   }
+
+  .conD__text h2 br,
+  .conD__text p br{
+    display: none; 
+  }
+
+.conD__image__phone{
+  display: none;
+}
 
 
 }
