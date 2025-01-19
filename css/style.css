@@ -191,6 +191,13 @@ a {
   position: relative;
 }
 
+.conA__btn{
+  position: fixed!important;
+  top: 0%;
+  right: 0%;
+  width: 15%;
+}
+
 .conA__box{
   display: flex;
   justify-content: center;
@@ -198,9 +205,10 @@ a {
   position: absolute;
   top: 65%;
   left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
+  transform: translateX(-50%)!important;
+  -webkit-transform: translateX(-50%)!important;
+  -ms-transform: translateX(-50%)!important;
+  width: 100%;
 }
 
 .conA__btnA{
@@ -212,9 +220,9 @@ a {
   position: absolute;
   top: 25%;
   left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
+  transform: translateX(-50%)!important;
+  -webkit-transform: translateX(-50%)!important;
+  -ms-transform: translateX(-50%)!important;
 }
 
 /* conA */
@@ -226,39 +234,78 @@ a {
 
 
 .conB__box{
-  display: block;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3rem;
 }
 
 .conB__image{
-  width: 100%;
-  margin: 3rem 0 ;
+  width: 25%;
+  margin-bottom: 3rem;
+  margin-right: 3rem;
+}
+
+.conB__image:last-child{
+  margin-right: 0;
 }
 
 /* conB */
 /* --------------------------------- */
 /* conC */
 
-.conC {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+.conC__box{
+  display: block;
+}
 
-  min-height: 100vh;
-  position: relative;
-  /* 横幅をフィットさせる */
-  min-width:fit-content; 
-  text-align: center;
-  background-image:url(../img/value.png);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 100%;
-  margin-top: 10rem;
-  padding-bottom: 45%;
+.conC__image{
+  width: 100%;
+  margin: 10rem 0;
+}
+
+.loop__wrap {
+  display: flex;
+  width: 100vw;
+  height: 300px;
+  overflow: hidden;
+}
+
+.loop__wrap img {
+  width: auto;
+  height: 100%; 
+  padding: 0 3rem
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes loop2 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+.loop__wrap img:first-child {
+  animation: loop 50s -25s linear infinite;
+}
+
+.loop__wrap img:last-child {
+  animation: loop2 50s linear infinite;
 }
 
 /* conC */
 /* --------------------------------- */
 /* conD */
+
 
 /* conD */
 /* --------------------------------- */
@@ -428,12 +475,49 @@ div[class$="__text"],
  line-height: 2rem;
 }
 
+.conA .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.conA__btn{
+  width: 30%;
+}
 
-.conC{
-  min-height: 200px;
-  margin-top: 0;
-  margin-bottom: 3rem;
+.conA__btnA{
+  margin: 0;
+}
+
+.conA__image{
+  width: 100%;
+}
+
+.conB{
+  margin: 0;
+}
+
+.conB__box{
+  display: block;
+  margin: 0;
+}
+
+.conB__image{
+  width: 100%;
+  margin: 3rem 0;
+}
+
+.conC__image{
+  display: none;
+}
+
+.conC__image__phone{
+  width: 100%;
+  margin-bottom: 10rem;
+}
+
+.loop__wrap{
+  display: none;
 }
 
 .conE{
@@ -628,23 +712,6 @@ div[class$="__text"],
   display: block;
 }
   
-.conA{
-  background-image: url(../img/top.png);
-  width: 100%;
-  height: auto;
-  min-height: 700px;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 100%;
-}
-
-.conA::before{
-  background:none;
-}
-
-.conA__image{
-  width: 100%;
-}
 
 .hamburger .btn-gNav span {
   position: absolute;
@@ -655,7 +722,6 @@ div[class$="__text"],
   -webkit-transition: all 400ms;
   transition: all 400ms;
 }
-
 
 /* header */
  /* --------------------------------- */
@@ -692,6 +758,11 @@ div[class$="__text"],
     font-size: 16px;
   }
 
+  .conC__image__phone{
+    display: none;
+  }
+
+
 }
 /* タブレットのときの制御 */
 /* ------------------------ */
@@ -712,7 +783,9 @@ div[class$="__text"],
       font-size: 18px;
   }
 
-
+  .conC__image__phone{
+    display: none;
+  }
 
 
 }
