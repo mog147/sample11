@@ -24,9 +24,9 @@
     })(document);
   </script>
 
-  <!-- slider -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="css/6-1-7.css">
+  <!-- tag -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="css/6-2-3.css">
 
   <!-- 他のCSSファイルの読み込み -->
   <link href="css/style.css" rel="stylesheet" />
@@ -177,10 +177,6 @@
 
         </div>
 
-
-
-
-
       </div>
     </section>
 
@@ -274,17 +270,107 @@
 
       <div class="container">
 
+        <div class="conF__boxA">
+          <img class="conF__image aaa" src="img/blogA.png">
+          <img class="conF__image aaa" src="img/blogB.png">
+          <img class="conF__image aaa" src="img/blogC.png">
+          <img class="conF__image ccccc" src="img/blogA.png">
+          <img class="conF__image bbbbbb" src="img/blogB.png">
+          <img class="conF__image" src="img/blogC.png">
+        </div>
+
+        <div class="conF__boxB">
+
+          <div class="blog">
+            <P>SELECT TYPE KEYWORD</P>
+
+            <div class="tag__box">
+
+              <button class="button"><p class="tag aaa">aaa</p></button>
+              <button class="button"><p class="tag bbbbbb">bbbbbb</p></button>
+              <button class="button"><p class="tag ccccc">ccccc</p></button>
+            
+            </div>
+
+          </div>
+
+          <div class="blog">
+            <P>SELECT CONTENT KEYWORD</P>
+
+            <div class="tag__box">
+
+              <button class="button"><p class="tag aaa">aaa</p></button>
+              <button class="button"><p class="tag bbbbbb">bbbbbb</p></button>
+              <button class="button"><p class="tag ccccc">ccccc</p></button>
+            
+            </div>
+          </div>
+
+          <div class="blog">
+            <P>SELECT TASTE KEYWORD</P>
+
+            <div class="tag__box">
+
+              <button class="button"><p class="tag aaa">aaa</p></button>
+              <button class="button"><p class="tag bbbbbb">bbbbbb</p></button>
+              <button class="button"><p class="tag ccccc">ccccc</p></button>
+            
+            </div>
+          </div>
+
+
+        </div>
 
       </div>
     </section>
 
     <section id="FUN" class="conG">
+      <div class="container">
+
+        <div class="conG__image"></div>
+
+    </div>
     </section>
 
     <section id="EAT"  class="conH">
         <div class="container">
 
-          <div class="conH__image"></div>
+          <div class="title">
+            <h2>CONTACT</h2>
+            <p>お問い合わせ</p>
+          </div>
+
+          <div class="conH__text">
+            <p>弊社のサービスにご感心をお寄せいただきありがとうございます。
+            <br>ITコンサルティングに関するご質問やご相談は、下記フォームよりお気軽にお問い合わせください。
+            <br>担当より折り返しご連絡させていただきます。</p>
+          </div>
+
+          <div class="Form">
+            <div class="Form-Item">
+              <p class="Form-Item-Label">
+                <span class="Form-Item-Label-Required">必須</span>会社名
+              </p>
+              <input type="text" class="Form-Item-Input" placeholder="例）株式会社令和">
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+              <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+              <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000">
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+              <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+              <textarea class="Form-Item-Textarea"></textarea>
+            </div>
+            <input type="submit" class="Form-Btn" value="送信する">
+          </div>
 
       </div>
   </section>
@@ -301,9 +387,14 @@
   <footer class="footer">
     <div class="container">
 
+      <div class="foot__image">
+        <a href="#"><img src="img/return__btn.png"></a>
+      </div>
 
-
-          
+      <div class="foot__text">
+        <h2>MOQソリューションズ</h2>
+        <p>© COPY LIGHT</p>
+      </div>          
 
     </div>  
 </footer>
@@ -311,8 +402,10 @@
 
 </div>
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+      <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
       <script src="js/main.js"></script>
 

@@ -40,6 +40,3 @@ for (var i = 0; i < link.length; i++) {
     });
 }
 
-
-
-Resources
