@@ -204,6 +204,7 @@ a {
   top: 0%;
   right: 0%;
   width: 15%;
+  z-index: 999;
 }
 
 .conA__box{
@@ -211,7 +212,7 @@ a {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 65%;
+  top: 60%;
   left: 50%;
   transform: translateX(-50%)!important;
   -webkit-transform: translateX(-50%)!important;
@@ -219,18 +220,24 @@ a {
   width: 100%;
 }
 
-.conA__btnA{
-  margin-right: 10rem;
+.conA__btnA,
+.conA__btnB{
+  width: 20%;
+  margin: 0 3rem;
 }
 
 .conA__text{
   display: block;
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 50%;
   transform: translateX(-50%)!important;
   -webkit-transform: translateX(-50%)!important;
   -ms-transform: translateX(-50%)!important;
+}
+
+.conA__image{
+  width: 100%;
 }
 
 /* conA */
@@ -276,6 +283,7 @@ a {
   width: 100vw;
   height: 300px;
   overflow: hidden;
+  
 }
 
 .loop__wrap img {
