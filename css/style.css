@@ -865,6 +865,14 @@ div[class$="__text"],
     display: none;
   }
 
+  .conD__text h2 br{
+    display: none; 
+  }
+
+  .conD__image__phone{
+    display: none;
+  }
+
 
 }
 /* タブレットのときの制御 */
@@ -891,14 +899,13 @@ div[class$="__text"],
     display: none;
   }
 
-  .conD__text h2 br,
-  .conD__text p br{
+  .conD__text h2 br{
     display: none; 
   }
 
-.conD__image__phone{
-  display: none;
-}
+  .conD__image__phone{
+    display: none;
+  }
 
 
 }
