@@ -32,6 +32,10 @@ body {
   color: var(--main-color);
 }
 
+.accent__color{
+  color: var(--accent-color);
+}
+
 .sub__color{
   color: var(--sub-color);
 }
@@ -54,6 +58,7 @@ a {
 
 h2{
   font-weight:normal;
+  line-height: 1.5;
 }
 
 .wrapper{
@@ -67,6 +72,12 @@ h2{
   font-family: "minion-pro", serif;
   font-weight: 400;
   font-style: normal;
+  line-height: 1.5;
+}
+
+.subtitle{
+  text-align: center;
+  line-height: 1.5;
 }
 
 
@@ -84,6 +95,17 @@ div[class$="__text"],
 /* --------------------------------- */
 /* header */
 
+.header__box{
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+.header__rogo{
+  width: 25%;
+  z-index: 998;
+}
+
 .btn-gNav{
   display: none;
 }
@@ -93,13 +115,12 @@ div[class$="__text"],
   justify-content: center;
   align-items: center;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .gnav__link{
   width:100% ;
   margin-left: 3rem;
-  color: var(--base-bright-color);
+  color: var(--dark-main-color);
 }
 
 .gnav__list{
@@ -205,7 +226,7 @@ a {
   position: fixed!important;
   top: 0%;
   right: 0%;
-  width: 15%;
+  width: 10%;
   z-index: 999;
 }
 
@@ -330,24 +351,101 @@ a {
 
 .conD__box{
   display: flex;
-  justify-content: center;
+  justify-content:space-evenly;
   align-items: flex-start;
   margin: 10rem 0;
+}
+
+.conD__image{
+  width: 30%;
 }
 
 /* conD */
 /* --------------------------------- */
 /* conE */
 
+.conE__box{
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+
+
 
 .conE__image{
-  min-height: 100vh;
-  background-image:url(../img/history.png);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 100%;
-  object-fit: cover;
-  padding-bottom: 120%;
+  position: absolute;
+  top: -2%;
+  left: 0%;
+  width: 100%;
+}
+
+.conE #mv{
+  aspect-ratio: 16 / 9;
+  max-height: 80vh;
+  
+}
+
+.img01{
+z-index: 0;
+}
+
+.img02{
+z-index: 200;
+}
+
+.text02{
+  left: 50%;
+}
+
+.img03{
+z-index: 300;
+margin-bottom: 0!important;
+}
+
+.conE .mv-bg{
+    width: 60%;
+    -webkit-transform: translateX(-50%);
+    top: -15%;
+    left: 80%;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: -1;  
+    object-fit:contain
+
+}
+
+.conE .mv-bg2{
+    width: 60%;
+    -webkit-transform: translateX(-50%);
+    top: -15%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: -1;  
+
+}
+
+.conE__text{
+  position: absolute;
+  top:0;
+  width: 50%!important;
+  margin: 0 3rem;
+}
+
+.conE__text h2{
+  margin: 0;
+}
+
+
+
+.conE__text span{
+  font-size: 40px;
 }
 
 
@@ -355,30 +453,10 @@ a {
 /* conE */
 /* --------------------------------- */
 /* conF */
-
-.conF__image{
-  min-height: 40vh;
-  background-image: url(../img/pro.png);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 100%;
-  object-fit: cover;
-  margin-bottom: 3rem;
-}
-
-.conF__box{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.pro{
-  width: 30%;
-  margin-right: 3rem;
-}
-
-.pro:last-child{
-  margin-right: 0;
+.conF .loop__wrap{
+  margin-top: 5rem;
+  position: absolute;
+  z-index: 800;
 }
 
 
@@ -387,44 +465,19 @@ a {
 /* --------------------------------- */
 /* conG */
 
-  .conG{
-    min-height: 100vh;
-    background-image: url(../img/fun.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 100%;
-    object-fit: cover;
-    padding-bottom: 50%;
-}
+
 
 /* conG */
 /* --------------------------------- */
 /* conH */
 
-.conH__image {
-  min-height: 100vhpx;
-  background-image:url(../img/eat.png);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  object-fit: cover;
-  padding-bottom: 200%;
-}
 
 
 /* conH */
 /* --------------------------------- */
 /* conI */
 
-.conI{
-  min-height: 100vh;
-  background-image: url(../img/event.png);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 100%;
-  object-fit: cover;
-  padding-bottom: 100%;
-}
+
 
 /* conI */
 /* --------------------------------- */
@@ -503,6 +556,10 @@ div[class$="__text"],
  line-height: 2rem;
 }
 
+.conA{
+  height: 100vh;
+}
+
 .conA .container{
   display: flex;
   justify-content: center;
@@ -579,27 +636,38 @@ div[class$="__text"],
   margin: 3rem 0;
 }
 
-
-
-.conE{
-  min-height: 100vh;
-  background-image: url(../img/history__phone.png);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 40%;
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-  padding-bottom: 220%;
+.conE__image,
+.conE #mv{
+  display: none;
 }
 
-.conE__image{
-  display: none;
+.conE__container{
+  display: block;
+  padding: 0 3rem;
+}
+
+.conE__box{
+  width: 100%;
+  margin-bottom: 35rem;
+}
+
+.conE__btn{
+  width: 88%;
+}
+
+.conE__text{
+  margin: 0;
+  width: 100%!important;
+  
 }
 
 .conF__box{
   display: block;
   
+}
+
+.text02{
+  left: 0;
 }
 
 .pro{
@@ -612,14 +680,7 @@ div[class$="__text"],
   margin-bottom: -15rem;
 }
 
-.conH {
-  min-height: 100vh;
-  background-image:url(../img/eat.png);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
-  object-fit: cover;
-}
+
 
 .conH__image {
   display: none;
@@ -635,6 +696,9 @@ div[class$="__text"],
 
 /* --------------------------------- */
 /* header */
+.header__rogo{
+  width: 25%;
+}
 
 .hamburger .btn-gNav {
   position: fixed;
@@ -699,6 +763,7 @@ div[class$="__text"],
   z-index: 1;
   padding-top: 50px;
   transition: .3s;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .btn-gNav {
@@ -737,6 +802,7 @@ div[class$="__text"],
 .gnav__link {
   display: block;
   margin: 0;
+  color: var(--base-bright-color);
 }
 
 .gnav__list li+ li {
@@ -765,7 +831,7 @@ div[class$="__text"],
   /* footer */
 
 .footer{
-  min-height: 13vh;
+  min-height: 100vh;
 } 
 
 .foot__image{
@@ -813,11 +879,12 @@ div[class$="__text"],
   }
 
   h2 {
-      font-size: 55px;
+      font-size: 40px;
   }
 
   p {
       font-size: 18px;
+      line-height: 3rem;
   }
 
   .conC__image__phone{

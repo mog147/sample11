@@ -14,30 +14,6 @@
       });
 
 
-// スクロールするとicon色変更
-if (window.matchMedia("(min-width: 768px)").matches) {
-
-
-$(function () {
-
-  $(window).on("scroll", function () {
-    const sliderHeight = $(".conB").height();
-
-      if (sliderHeight - 30 < $(this).scrollTop()) {
-
-        $(".js-header").addClass("headerColorScroll");
-
-      } else {
-
-        $(".js-header").removeClass("headerColorScroll");
-
-      }
-
-    });
-
-  })
-};
-
 // カーソル用のdivタグを取得してcursorに格納
 var cursor = document.getElementById('cursor'); 
 
