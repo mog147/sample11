@@ -554,61 +554,38 @@ margin-bottom: 0!important;
   margin-top: 0%;
 }
 
-.Form {
+.send__btn{
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frm {
   margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
   max-width: 720px;
 }
-@media screen and (max-width: 480px) {
-  .Form {
-    margin-top: 40px;
-  }
+
+.frm p{
+  font-family: "Noto Sans JP";
 }
-.Form-Item {
-  padding-top: 24px;
+
+.frm__item {
   padding-bottom: 24px;
   width: 100%;
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 480px) {
-  .Form-Item {
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    flex-wrap: wrap;
-  }
+
+.frm__item-label{
+  width: 100px;
 }
-.Form-Item:nth-child(5) {
-  border-bottom: 1px solid #ddd;
-}
-.Form-Item-Label {
-  width: 100%;
-  max-width: 248px;
-  letter-spacing: 0.05em;
-  font-weight: bold;
-  font-size: 18px;
-}
-@media screen and (max-width: 480px) {
-  .Form-Item-Label {
-    max-width: inherit;
-    display: flex;
-    align-items: center;
-    font-size: 15px;
-  }
-}
-.Form-Item-Label.isMsg {
-  margin-top: 8px;
-  margin-bottom: auto;
-}
-@media screen and (max-width: 480px) {
-  .Form-Item-Label.isMsg {
-    margin-top: 0;
-  }
-}
-.Form-Item-Label-Required {
+
+
+.frm__item-label-Required {
   border-radius: 6px;
   margin-right: 8px;
   padding-top: 8px;
@@ -617,87 +594,32 @@ margin-bottom: 0!important;
   display: inline-block;
   text-align: center;
   background:var(--accent-color);
-  color: #fff;
+  color: var(--base-bright-color);
   font-size: 14px;
 }
-@media screen and (max-width: 480px) {
-  .Form-Item-Label-Required {
-    border-radius: 4px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    width: 32px;
-    font-size: 10px;
-  }
-}
-.Form-Item-Input {
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  margin-left: 40px;
-  padding-left: 1em;
-  padding-right: 1em;
-  height: 48px;
-  flex: 1;
-  width: 100%;
-  max-width: 410px;
-  background: #eaedf2;
-  font-size: 18px;
-}
-@media screen and (max-width: 480px) {
-  .Form-Item-Input {
-    margin-left: 0;
-    margin-top: 18px;
-    height: 40px;
-    flex: inherit;
-    font-size: 15px;
-  }
-}
-.Form-Item-Textarea {
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  margin-left: 40px;
-  padding-left: 1em;
-  padding-right: 1em;
-  height: 216px;
-  flex: 1;
-  width: 100%;
-  max-width: 410px;
-  background: #eaedf2;
-  font-size: 18px;
-}
-@media screen and (max-width: 480px) {
-  .Form-Item-Textarea {
-    margin-top: 18px;
-    margin-left: 0;
-    height: 200px;
-    flex: inherit;
-    font-size: 15px;
-  }
-}
-.Form-Btn {
-  border-radius: 6px;
-  margin-top: 32px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 280px;
-  display: block;
-  letter-spacing: 0.05em;
-  background:var(--accent-color);
-  color: #fff;
-  font-weight: bold;
-  font-size: 20px;
+
+.frm__item-input,
+.frm__item-textarea {
   border: none;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background:var(--base-bk-color);
+  font-size: 18px;
 }
-@media screen and (max-width: 480px) {
-  .Form-Btn {
-    margin-top: 24px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    width: 160px;
-    font-size: 16px;
-  }
+
+.frm__item-input{
+  height: 48px;
 }
+
+.frm__item-textarea {
+  height: 216px;
+}
+
 
 
 /* conH */
@@ -880,6 +802,10 @@ div[class$="__text"],
   
 }
 
+.text02{
+  left: 0;
+}
+
 .conF{
   margin-top: 23rem;
 }
@@ -921,7 +847,41 @@ div[class$="__text"],
   background-position: center top;
 }
 
+.frm__item {
+  flex-wrap: wrap;
+}
 
+.send__btn{
+  width: 100%;
+}
+
+.required{
+  color: var(--sub-color);
+}
+
+.frm__item-label-Required {
+  border-radius: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 32px;
+  font-size: 10px;
+}
+
+.frm__item-input {
+  margin-left: 0;
+  margin-top: 18px;
+  height: 40px;
+  flex: inherit;
+  font-size: 15px;
+}
+
+.frm__item-textarea {
+  margin-top: 18px;
+  margin-left: 0;
+  height: 200px;
+  flex: inherit;
+  font-size: 15px;
+}
   
 
 /* --------------------------------- */
