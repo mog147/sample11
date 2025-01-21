@@ -40,3 +40,27 @@ for (var i = 0; i < link.length; i++) {
     });
 }
 
+$(function(){
+
+  $('.sortNav li').each(function(){
+
+    $(this).click(function(){
+
+      var btnName = $(this).attr("class").substring(5).toLowerCase();
+
+      var className = '.';
+      className += btnName;
+
+      if(btnName == 'all') {
+
+        $('.mini__container > img').fadeIn(200);
+
+      } else {
+
+        $('.mini__container img:not(className)').hide();
+        $(className).fadeIn(200);
+
+      }
+    });
+  });
+});

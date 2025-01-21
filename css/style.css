@@ -465,31 +465,40 @@ margin-bottom: 0!important;
 /* --------------------------------- */
 /* conF */
 
+.conF{
+  height: 130vh;
+  margin-bottom: 10rem;
+}
+
 .conF .loop__wrap{
   margin-top: 5rem;
   position: absolute;
-  z-index: 800;
+  z-index: 400;
 }
-.conF__boxA{
+.mini__container{
   margin-top: 20rem;
 }
 
 .conF__boxB{
-  margin-top: 10rem;
+  margin-top: 1rem;
+  margin-bottom: 10rem;
 }
 
-.conF__boxA,
+.mini__container,
 .conF__boxB{
   display: flex;
   justify-content:space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  z-index: 500;
 }
 
 .conF__image{
   width: 30%;
   margin-bottom: 3rem;
 }
+
+
 
 .blog p{
   text-align: center;
@@ -499,21 +508,27 @@ margin-bottom: 0!important;
   border: 2px solid var(--accent-color);
   border-radius: 20px;
 	width: 90%;
-	height: 200px;
+	height: 400px;
   padding: 1rem;
-}
-
-.tag{
-  padding: 0 1.5rem ;
-  margin: 1rem ;
-  display:inline-block;
-  background-color:var(--accent-color);
-  color: var(--base-bright-color);
-  height: auto;
 }
 
 .blog{
   width: 30%;
+}
+
+.sortNav {
+  overflow: hidden;
+  margin-bottom: 30px;
+  padding: 0;
+}
+.sortNav li {
+  padding: 1rem ;
+  margin: 1rem ;
+  list-style:none;
+  float: left;
+  margin-left: 10px;
+  color: var(--base-bright-color);
+  background-color: var(--accent-color);
 }
 
 
@@ -523,15 +538,17 @@ margin-bottom: 0!important;
 
 .conG__image{
 
-  min-height: 70vh;
+  min-height: 100vh;
   background-image: url(../img/map.png);
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center center;
   background-size: 100%;
   object-fit: cover;
   width: 100%;
   height: auto;
-  margin-top: 0%;
+  margin-top: 20rem;
+  position: relative;
+  z-index: 500;
 }
 
 
@@ -560,6 +577,10 @@ margin-bottom: 0!important;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.required{
+  color: var(--sub-color);
 }
 
 .frm {
@@ -777,6 +798,10 @@ div[class$="__text"],
   margin: 3rem 0;
 }
 
+.conE{
+  height: 200vh;
+}
+
 .conE__image,
 .conE #mv{
   display: none;
@@ -807,7 +832,7 @@ div[class$="__text"],
 }
 
 .conF{
-  margin-top: 23rem;
+  height: 390vh;
 }
 
 .conF__boxA{
@@ -840,10 +865,13 @@ div[class$="__text"],
 }
 
 .conG{
-  max-height: 300px;
+  margin-top: -230%;
 }
 
 .conG__image{
+  min-height: 100px;
+  margin-top: 45rem!important;
+  margin: 0;
   background-position: center top;
 }
 
@@ -853,10 +881,6 @@ div[class$="__text"],
 
 .send__btn{
   width: 100%;
-}
-
-.required{
-  color: var(--sub-color);
 }
 
 .frm__item-label-Required {
@@ -1021,7 +1045,7 @@ div[class$="__text"],
   /* footer */
 
 .footer{
-  min-height: 100vh;
+  height: 200px;
 } 
 
 .foot__image{
