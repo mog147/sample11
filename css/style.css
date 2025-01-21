@@ -464,6 +464,7 @@ margin-bottom: 0!important;
 /* conE */
 /* --------------------------------- */
 /* conF */
+
 .conF .loop__wrap{
   margin-top: 5rem;
   position: absolute;
@@ -837,10 +838,6 @@ div[class$="__text"],
   margin: 0;
 }
 
-.loop__wrap{
-  display: none;
-}
-
 .conD__box{
   display: block;
   margin: 0;
@@ -883,35 +880,46 @@ div[class$="__text"],
   
 }
 
+.conF{
+  margin-top: 23rem;
+}
+
+.conF__boxA{
+  display: block;
+  margin-top: 25rem;
+}
+
+.conF__boxB{
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.blog{
+  width:100% ;
+}
+
+.blog p{
+  padding: 1rem;
+}
+
+.conF__image{
+  width: 100%;
+}
+
+
 .conF__box{
   display: block;
   
 }
 
-.text02{
-  left: 0;
-}
-
-.pro{
-  width: 100%;
-  margin-bottom: 3rem;
-}
-
 .conG{
-  padding: 0;
-  margin-bottom: -15rem;
+  max-height: 300px;
 }
 
-
-
-.conH__image {
-  display: none;
+.conG__image{
+  background-position: center top;
 }
-
-.conI{
-  padding-bottom: 0;
-}
-
 
 
   
