@@ -798,10 +798,6 @@ div[class$="__text"],
   margin: 3rem 0;
 }
 
-.conE{
-  height: 200vh;
-}
-
 .conE__image,
 .conE #mv{
   display: none;
@@ -814,7 +810,7 @@ div[class$="__text"],
 
 .conE__box{
   width: 100%;
-  margin-bottom: 35rem;
+  height: 400px;
 }
 
 .conE__btn{
@@ -838,7 +834,6 @@ div[class$="__text"],
 
 .conF__boxA{
   display: block;
-  margin-top: 25rem;
 }
 
 .conF__boxB{
