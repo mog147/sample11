@@ -833,6 +833,7 @@ div[class$="__text"],
 
 .conF{
   height: 390vh;
+  margin-top: 35rem;
 }
 
 .conF__boxA{
@@ -865,7 +866,7 @@ div[class$="__text"],
 }
 
 .conG{
-  margin-top: -230%;
+  margin-top: 0;
 }
 
 .conG__image{
