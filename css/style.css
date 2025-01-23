@@ -169,29 +169,31 @@ a {
 }
 
 /*独自のマウスカーソルを作成*/
-.cursor {
-  position: fixed;
-  top: -5px;
-  left: -5px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 1000;
-  transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s;
-  transform: translate(0, 0);
-  pointer-events: none;
-}
 
-/*aタグにホバーした時に見た目変化*/
-.cursor.cursor--hover {
-  top: -20px;
-  left: -20px;
-  width: 40px;
-  height: 40px;
-  background:var(--accent-color);
+@media (hover: hover){
+	.cursor {
+	  position: fixed;
+	  top: -5px;
+	  left: -5px;
+	  width: 10px;
+	  height: 10px;
+	  border-radius: 50%;
+	  background: rgba(0, 0, 0, 0.7);
+	  z-index: 1000;
+	  transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s;
+	  transform: translate(0, 0);
+	  pointer-events: none;
+	}
+	
+	/*aタグにホバーした時に見た目変化*/
+	.cursor.cursor--hover {
+	  top: -20px;
+	  left: -20px;
+	  width: 40px;
+	  height: 40px;
+	  background:var(--accent-color);
+	}
 }
-
 
 /* header */
 /* --------------------------------- */
