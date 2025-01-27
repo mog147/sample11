@@ -139,6 +139,7 @@ div[class$="__text"],
   justify-content: center;
   align-items: center;
   padding: 0;
+  z-index: 999;
 }
 
 
